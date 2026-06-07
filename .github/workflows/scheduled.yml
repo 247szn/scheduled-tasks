@@ -46,4 +46,6 @@ jobs:
           API_KEY: ${{ secrets.API_KEY }}
           WHATSAPP_NUM: ${{ secrets.WHATSAPP_NUM }}
           MY_NUMBER: ${{ secrets.MY_NUMBER }}
+          MY_LAT: ${{ secrets.MY_LAT }}
+          MY_LONG: ${{ secrets.MY_LONG }}
         run: python main.py
