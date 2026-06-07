@@ -41,6 +41,9 @@ jobs:
         env:
           # Your secrets are available as environment variables
           # Add more secrets in Settings > Secrets > Actions
-          MY_EMAIL: ${{ secrets.MY_EMAIL }}
-          MY_PASSWORD: ${{ secrets.MY_PASSWORD }}
+          ACC_SID: ${{ secrets.ACC_SID }}
+          AUTH_TOKEN: ${{ secrets.AUTH_TOKEN }}
+          API_KEY: ${{ secrets.API_KEY }}
+          WHATSAPP_NUM: ${{ secrets.WHATSAPP_NUM }}
+          MY_NUMBER: ${{ secrets.MY_NUMBER }}
         run: python main.py
