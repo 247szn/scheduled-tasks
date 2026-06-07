@@ -8,8 +8,8 @@ my_api_key = os.environ.get("API_KEY")
 from_number= os.environ.get("WHATSAPP_NUM")
 to_number = os.environ.get("MY_NUMBER")
 parameter= {
-    "lat":29.951886,
-    "lon":-95.194955,
+    "lat":os.environ.get("MY_LAT"),
+    "lon":os.environ.get("MY_LONG"),
     "appid":my_api_key,
     "cnt":4,
 }
